@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS link_clicks (
+  id SERIAL PRIMARY KEY,
+  url TEXT NOT NULL,
+  clicked_at TIMESTAMP DEFAULT NOW()
+);
